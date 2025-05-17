@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  hamburger-maze:
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - './src:/maze/src'
+  
